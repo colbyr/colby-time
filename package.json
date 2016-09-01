@@ -13,8 +13,13 @@
     "lint": "eslint ./src"
   },
   "pebble": {
-    "displayName": "Colby Time",
     "uuid": "2e5b549c-bdef-46e3-bacd-ba017d2d102f",
+    "displayName": "Colby Time",
+    "shortName": "c-time",
+    "longName": "Colby Time",
+    "companyName": "colbyr",
+    "versionCode": 1,
+    "versionLabel": "1.0",
     "projectType": "rocky",
     "sdkVersion": "3",
     "enableMultiJS": true,
