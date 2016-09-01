@@ -13,11 +13,15 @@
     "lint": "eslint ./src"
   },
   "pebble": {
-    "displayName": "colby-time",
+    "displayName": "Colby Time",
     "uuid": "2e5b549c-bdef-46e3-bacd-ba017d2d102f",
     "projectType": "rocky",
     "sdkVersion": "3",
     "enableMultiJS": true,
+    "messageKeys": [],
+    "targetPlatforms": [
+        "basalt"
+    ],
     "watchapp": {
       "watchface": true
     },
