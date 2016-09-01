@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {},
   "scripts": {
+    "cloudpebble": "pebble build && pebble install --cloudpebble",
     "emulate": "pebble build && pebble install --logs --emulator basalt",
     "lint": "eslint ./src"
   },
