@@ -11,20 +11,21 @@ function format(hh, mm) {
   return zeroPad(hh) + zeroPad(mm);
 }
 
-var text = null;
-
-rocky.on('minutechange', function(event) {
-  var date = event.date;
-  text = (
-    format(date.getHours(), date.getMinutes()) +
-    '\n' +
-    format(date.getMonth() + 1, date.getDate())
-  );
+rocky.on('minutechange', function() {
   rocky.requestDraw();
 });
 
 rocky.on('draw', function(event) {
   var ctx = event.context;
+  var date = new Date();
+  var text = (
+    format(date.getHours(), date.getMinutes()) +
+    '\n' +
+    format(date.getMonth() + 1, date.getDate()) +
+    '\n' +
+    date.getFullYear()
+  );
+
   ctx.clearRect(0, 0, ctx.canvas.clientWidth, ctx.canvas.clientHeight);
   ctx.fillStyle = '#FA4B00';
   ctx.font = '42px bold numbers Leco-numbers';
