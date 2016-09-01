@@ -1,6 +1,6 @@
 {
   "name": "colby-time",
-  "author": "MakeAwesomeHappen",
+  "author": "colbyr.com",
   "version": "1.0.0",
   "keywords": [
     "pebble-app"
@@ -17,7 +17,6 @@
     "displayName": "Colby Time",
     "shortName": "c-time",
     "longName": "Colby Time",
-    "companyName": "colbyr",
     "versionCode": 1,
     "versionLabel": "1.0",
     "projectType": "rocky",
