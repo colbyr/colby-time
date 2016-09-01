@@ -5,6 +5,9 @@
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
+  "scripts": {
+    "emulate": "pebble build && pebble install --logs --emulator basalt"
+  },
   "pebble": {
     "displayName": "colby-time",
     "uuid": "2e5b549c-bdef-46e3-bacd-ba017d2d102f",
@@ -12,7 +15,7 @@
     "sdkVersion": "3",
     "enableMultiJS": true,
     "watchapp": {
-      "watchface": false
+      "watchface": true
     },
     "resources": {
       "media": []
