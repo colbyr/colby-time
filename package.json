@@ -2,11 +2,14 @@
   "name": "colby-time",
   "author": "MakeAwesomeHappen",
   "version": "1.0.0",
-  "keywords": ["pebble-app"],
+  "keywords": [
+    "pebble-app"
+  ],
   "private": true,
   "dependencies": {},
   "scripts": {
-    "emulate": "pebble build && pebble install --logs --emulator basalt"
+    "emulate": "pebble build && pebble install --logs --emulator basalt",
+    "lint": "eslint ./src"
   },
   "pebble": {
     "displayName": "colby-time",
@@ -20,5 +23,8 @@
     "resources": {
       "media": []
     }
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0"
   }
 }
