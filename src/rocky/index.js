@@ -27,7 +27,7 @@ rocky.on('draw', function(event) {
   );
 
   ctx.clearRect(0, 0, ctx.canvas.clientWidth, ctx.canvas.clientHeight);
-  ctx.fillStyle = '#FA4B00';
+  ctx.fillStyle = '#88cc00';
   ctx.font = '42px bold numbers Leco-numbers';
   ctx.textAlign = 'center';
 
