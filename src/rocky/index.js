@@ -37,7 +37,7 @@ rocky.on('draw', function(event) {
 
   ctx.fillText(
     text,
-    (w / 2),
-    (h / 2) - (t.height / 2)
+    Math.floor(w / 2),
+    Math.floor(h / 2) - (Math.floor(t.height / 2) + 7)
   );
 });
