@@ -24,7 +24,7 @@
     "enableMultiJS": true,
     "messageKeys": [],
     "targetPlatforms": [
-        "basalt"
+      "basalt"
     ],
     "watchapp": {
       "watchface": true
