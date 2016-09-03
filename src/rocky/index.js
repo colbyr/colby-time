@@ -11,6 +11,14 @@ function format(hh, mm) {
   return zeroPad(hh) + zeroPad(mm);
 }
 
+function get12Hours(date) {
+  var hours = date.getHours() % 12;
+  if (hours === 0) {
+    return 12;
+  }
+  return hours;
+}
+
 rocky.on('minutechange', function() {
   rocky.requestDraw();
 });
@@ -19,7 +27,7 @@ rocky.on('draw', function(event) {
   var ctx = event.context;
   var date = new Date();
   var text = (
-    format(date.getHours(), date.getMinutes()) +
+    format(get12Hours(date), date.getMinutes()) +
     '\n' +
     format(date.getMonth() + 1, date.getDate()) +
     '\n' +
